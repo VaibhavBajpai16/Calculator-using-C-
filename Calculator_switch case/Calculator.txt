@@ -1,0 +1,49 @@
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+
+    char opera;
+    float num1, num2;
+    cout<<"Enter the operator";
+
+
+
+    cin >> opera;
+
+
+    cout<<"Enter the two numbers";
+
+    cin >> num1 >> num2;
+
+
+    switch (opera) {
+
+
+        case '+':
+            cout << num1 + num2;
+            break;
+
+        case '-':
+            cout << num1 - num2;
+            break;
+
+
+        case '*':
+            cout << num1 * num2;
+            break;
+
+        case '/':
+            cout << num1 / num2;
+            break;
+
+        default:
+            cout << "Error! operator is not correct";
+            break;
+    }
+
+    return 0;
+}
